@@ -65,7 +65,7 @@ class Cache implements CacheInterface
     }
 
     /**
-     * 静态魔术方法
+     * 魔术方法
      * 
      * @create 2016-4-7
      * @author deatil
