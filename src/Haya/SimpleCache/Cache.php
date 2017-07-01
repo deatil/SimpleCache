@@ -67,7 +67,7 @@ class Cache implements CacheInterface
     /**
      * 魔术方法
      * 
-     * @create 2016-4-7
+     * @create 2017-4-7
      * @author deatil
      */
     public function __call($method, $args)
