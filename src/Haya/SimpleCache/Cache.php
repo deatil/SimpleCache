@@ -237,7 +237,7 @@ class Cache implements CacheInterface
         
         foreach ($values as $key => $value) {
             $status = $this->set($key, $value, $ttl);
-            if ($status == false) {
+            if ($status === false) {
                 return false;
             }
         }
