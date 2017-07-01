@@ -347,7 +347,7 @@ class Cache implements CacheInterface
     /**
      * 链接
      * 
-     * @create 2016-4-7
+     * @create 2017-6-25
      * @author deatil
      */
     protected function connect($isRefresh = false) 
