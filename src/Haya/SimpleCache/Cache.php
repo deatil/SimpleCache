@@ -72,8 +72,8 @@ class Cache implements CacheInterface
      */
     public function __call($method, $args)
     {
-        if ( method_exists($this->handler, $method) ) {
-            return call_user_func_array([$this->handler, $method], $args);
+        if ( method_exists($this->connect(), $method) ) {
+            return call_user_func_array([$this->connect(), $method], $args);
         }
 
         throw new InvalidArgumentException(__CLASS__ . "：{$method}方法没有定义！");
