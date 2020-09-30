@@ -2,6 +2,8 @@
 
 namespace Haya\SimpleCache;
 
+use Psr\SimpleCache\CacheException;
+
 /**
  * Exception interface for invalid cache arguments.
  *
