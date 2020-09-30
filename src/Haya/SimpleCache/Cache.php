@@ -193,7 +193,7 @@ class Cache implements CacheInterface
     public function getMultiple($keys, $default = null)
     {
         if (!is_array($keys)) {
-            throw new InvalidArgumentException("{$key} is neither an array nor a Traversable.");
+            throw new InvalidArgumentException("{$keys} is neither an array nor a Traversable.");
         }
         
         if (empty($keys) || !is_array($keys)) {
@@ -228,7 +228,7 @@ class Cache implements CacheInterface
     public function setMultiple($values, $ttl = null)
     {
         if (!is_array($values)) {
-            throw new InvalidArgumentException("{$key} is neither an array nor a Traversable.");
+            throw new InvalidArgumentException("{$values} is neither an array nor a Traversable.");
         }
         
         if (empty($values) || !is_array($values)) {
